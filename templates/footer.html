@@ -1,0 +1,10 @@
+<!-- footer html-->
+{% block footer %}
+    <a href="/">Home Page</a>
+    {% if now %}
+        <p>Now the time is: {{ now }}</p>
+    {% else %}
+        <p>The articles are took from the website.</p>
+    {% endif %}
+
+{% endblock %}

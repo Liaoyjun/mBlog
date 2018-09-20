@@ -1,0 +1,10 @@
+<!--post html-->
+{% extends 'base.html'%}
+{% block title %}{{ post.title }}record the life{% endblock %}
+{% block headmessage %}
+    <h3>{{ post.title }}</h3>
+
+{% endblock %}
+{%  block content %}
+    <p>{{ post.body }}</p>
+{% endblock %}
