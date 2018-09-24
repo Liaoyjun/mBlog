@@ -40,5 +40,5 @@ def showpost(request, slug):
 			html = template.render(locals())
 			return HttpResponse(html)
 	except:
-		return redirect('/')
+		return redirect('/404')
 
