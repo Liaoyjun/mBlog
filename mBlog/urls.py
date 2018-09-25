@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from mainsite.views import homepage, showArticle, showArticlesList
+from mainsite.views import homepage, showArticle, showArticlesList, showAboutPage
 
 
 urlpatterns = [
@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage),
     path('articlesList', showArticlesList),
+    path('about', showAboutPage),
     re_path(r'^post/(\w+)/$', showArticle)
 
 ]
