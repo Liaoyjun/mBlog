@@ -1,14 +1,31 @@
 <!-- articlesList.html -->
 
 {% extends 'base.html' %}
-{% block title %}Welcome here{% endblock %}
-{% block headmessage %}
-    <h3>Articles list</h3>
+{% block httpHead %}Welcome here{% endblock %}
+{% block title %}
+    <div class="blog-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 blog-main">
+                    <h3>Articles list</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 {% block content %}
-    {% for post in posts %}
-        <p>
-        <a href="/post/{{ post.slug }}">{{ post.title}}</a>
-        </p>
-    {% endfor %}
+    <div class="blog-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 blog-main">
+                    {% for post in posts %}
+                        <p><a href="/post/{{ post.slug }}">{{ post.title}}</a>.</p>
+                     {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 {% endblock %}
