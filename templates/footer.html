@@ -1,10 +1,20 @@
 <!-- footer html-->
-{% block footer %}
-    <a href="/">Home Page</a>
-    {% if now %}
-        <p>Now the time is: {{ now }}</p>
-    {% else %}
-        <p>The articles are took from the website.</p>
-    {% endif %}
+{#{% block footer %}#}
+{#    <a href="/">Home Page</a>#}
+{#    {% if now %}#}
+{#        <p>Now the time is: {{ now }}</p>#}
+{#    {% else %}#}
+{#        <p>The articles are took from the website.</p>#}
+{#    {% endif %}#}
+{##}
+{#{% endblock %}#}
 
-{% endblock %}
+<footer class="blog-footer">
+      <p>
+          Powered by<a href="http://getbootstrap.com">Bootstrap</a> |
+          <a href="https://github.com/Liaoyjun/"> lyj@gitHub</a>
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+</footer>

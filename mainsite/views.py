@@ -32,8 +32,8 @@ def homepage(request):
 	return HttpResponse(html)
 
 
-def showpost(request, slug):
-	template = get_template('post.html')
+def showArticle(request, slug):
+	template = get_template('article.html')
 	try:
 		post = Post.objects.get(slug=slug)
 		if post is not None:
@@ -42,3 +42,9 @@ def showpost(request, slug):
 	except:
 		return redirect('/404')
 
+def showArticlesList(request):
+	template = get_template('articlesList.html')
+	posts = Post.objects.all()
+	now = datetime.now()
+	html = template.render(locals())
+	return HttpResponse(html)
