@@ -29,9 +29,25 @@ def homepage(request):
 
 
 def showArticle(request, aid):
-	template = get_template('article.html')
 	try:
-		article = Article.objects.get(aid=aid)
+		preId = -1
+		nextId = -1
+		template = get_template('article.html')
+# sort from small to great
+		articles = Article.objects.all().order_by('orderNum')
+		idList = list()
+
+		for article in articles:
+			idList.append(article.aid)
+
+		article = articles.get(aid=aid)
+		index = idList.index(article.aid)
+		if index != 0:
+			preId = idList[index-1]
+		if index != articles.count()-1:
+			nextId = idList[index+1]
+
+		# article = Article.objects.get(aid=aid)
 # 改写函数 showArticle(request, slug) 为 showArticle(request, slug, label)
 # 其中label为标签，如linux或全部。
 # 数据库查询 posts=Post.get(label)
