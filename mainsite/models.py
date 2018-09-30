@@ -19,7 +19,7 @@ class Post(models.Model):
 
 class Article(models.Model):
 	aid = models.IntegerField(primary_key=True)
-	orderNum = models.IntegerField
+	orderNum = models.IntegerField()
 
 	title = models.CharField(max_length=200)
 	abstract = models.CharField(max_length=400)
@@ -38,6 +38,7 @@ class Article(models.Model):
 
 class Linux(models.Model):
 	lid = models.IntegerField(primary_key=True)
+	orderNum = models.IntegerField()
 	aid = models.ForeignKey('Article', on_delete=models.CASCADE)
 
 	class Meta:

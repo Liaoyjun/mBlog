@@ -14,7 +14,7 @@ class ArticleAdmin(admin.ModelAdmin):
 
 
 class LinuxAdmin(admin.ModelAdmin):
-	list_display = ('lid', )
+	list_display = ('lid', 'orderNum')
 
 
 admin.site.register(Post, PostAdmin)

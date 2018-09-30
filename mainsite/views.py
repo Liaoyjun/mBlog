@@ -50,7 +50,7 @@ def showArticle(request, aid):
 
 def showArticlesList(request):
 	template = get_template('articlesList.html')
-	articles = Article.objects.all()
+	articles = Article.objects.all().order_by('orderNum')
 	now = datetime.now()
 	html = template.render(locals())
 	return HttpResponse(html)
