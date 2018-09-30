@@ -12,6 +12,31 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='Article',
+            fields=[
+                ('aid', models.IntegerField(primary_key=True, serialize=False)),
+                ('title', models.CharField(max_length=200)),
+                ('abstract', models.CharField(max_length=400)),
+                ('body', models.TextField()),
+                ('pubDate', models.DateTimeField(default=django.utils.timezone.now)),
+                ('modDate', models.DateTimeField(default=django.utils.timezone.now)),
+                ('picURL', models.CharField(max_length=200)),
+            ],
+            options={
+                'ordering': ('-pubDate',),
+            },
+        ),
+        migrations.CreateModel(
+            name='Linux',
+            fields=[
+                ('lid', models.IntegerField(primary_key=True, serialize=False)),
+                ('aid', models.ForeignKey(to='mainsite.Article', on_delete=models.CASCADE)),
+            ],
+            options={
+                'ordering': ('-lid',),
+            },
+        ),
+        migrations.CreateModel(
             name='Post',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),

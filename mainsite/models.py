@@ -16,3 +16,32 @@ class Post(models.Model):
 	def __unicode__(self):
 		return self.title
 
+
+class Article(models.Model):
+	aid = models.IntegerField(primary_key=True)
+	orderNum = models.IntegerField
+
+	title = models.CharField(max_length=200)
+	abstract = models.CharField(max_length=400)
+	body = models.TextField()
+	pubDate = models.DateTimeField(default=timezone.now)
+	modDate = models.DateTimeField(default=timezone.now)
+
+	picURL =  models.CharField(max_length=200)
+	class Meta:
+		ordering = ('-pubDate',)
+
+	def __unicode__(self):
+		return self.title
+
+
+
+class Linux(models.Model):
+	lid = models.IntegerField(primary_key=True)
+	aid = models.ForeignKey('Article', on_delete=models.CASCADE)
+
+	class Meta:
+		ordering = ('-lid',)
+
+	def __unicode__(self):
+		return self.lid

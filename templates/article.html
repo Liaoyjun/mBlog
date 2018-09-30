@@ -2,15 +2,15 @@
 {% extends 'base.html'%}
 {% load markdown_deux_tags %}
 
-{% block httpHead %}{{ post.title }}{% endblock %}
+{% block httpHead %}{{ article.title }}{% endblock %}
 
 {% block title %}
     <div class="blog-post">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 blog-main">
-                    <h2 class="blog-post-title">{{ post.title }}</h2>
-                    <p class="blog-post-meta">{{ post.pub_date }} by <a href="http://127.0.0.1:8001/about">Lyj</a>.</p>
+                    <h2 class="blog-post-title">{{ article.title }}</h2>
+                    <p class="blog-post-meta">{{ article.pubDate }} by <a href="http://127.0.0.1:8001/about">Lyj</a>.</p>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 blog-main">
-                    <p>{{ post.body | markdown }}</p>
+                    <p>{{ article.body | markdown }}</p>
                 </div>
             </div>
         </div>
