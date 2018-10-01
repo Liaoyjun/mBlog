@@ -23,9 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage),
     path('about', showAboutPage),
-    re_path(r'^post/(\w+)/(\w+)/$', showArticle),
+    re_path(r'^article/(\w+)/(\w+)/$', showArticle),
     # re_path(r'^post/(?P<classification>\w+)/(?P<aid>\w+)/$', showArticlesList3)
-    re_path(r'^post/(\w+)/$', showArticlesList)
+    re_path(r'^article/(\w+)/$', showArticlesList)
 
 ]
 

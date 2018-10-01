@@ -5,7 +5,7 @@
 from django.shortcuts import redirect
 
 
-from .models import Post, Article, Linux
+from .models import  Article, Linux
 from django.template.loader import get_template
 from django.http import HttpResponse
 from datetime import datetime
