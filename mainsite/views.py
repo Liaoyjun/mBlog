@@ -5,7 +5,7 @@
 from django.shortcuts import redirect
 
 
-from .models import Post, Article
+from .models import Post, Article, Linux
 from django.template.loader import get_template
 from django.http import HttpResponse
 from datetime import datetime
@@ -28,23 +28,38 @@ def homepage(request):
 	return HttpResponse(get_template('index.html').render())
 
 
-def showArticle(request, aid):
+def showArticle(request, className, aid):
 	try:
+		articles = list()
+		classes = list()
 		preId = -1
 		nextId = -1
+		n = 0
 		template = get_template('article.html')
+
+		if className == 'all':
+			articles = Article.objects.all().order_by('orderNum')
+			n = articles.count()
+		else:
+			if className == 'linux':
+				classes = Linux.objects.all().order_by('orderNum')
+
+			for every in classes:
+				articles.append(Article.objects.get(aid=every.article.aid))
+			n = len(articles)
+
 # sort from small to great
-		articles = Article.objects.all().order_by('orderNum')
+# 		articles = Article.objects.all().order_by('orderNum')
 		idList = list()
 
 		for article in articles:
 			idList.append(article.aid)
-
-		article = articles.get(aid=aid)
+		article = Article.objects.get(aid=aid)
+		# article = articles.get(aid=aid)
 		index = idList.index(article.aid)
 		if index != 0:
 			preId = idList[index-1]
-		if index != articles.count()-1:
+		if index != n-1:
 			nextId = idList[index+1]
 
 		# article = Article.objects.get(aid=aid)
@@ -64,12 +79,31 @@ def showArticle(request, aid):
 		return redirect('/404')
 
 
-def showArticlesList(request):
+# def showArticlesList(request):
+# 	template = get_template('articlesList.html')
+# 	articles = Article.objects.all().order_by('orderNum')
+# 	now = datetime.now()
+# 	html = template.render(locals())
+# 	return HttpResponse(html)
+
+
+def showArticlesList(request, className):
 	template = get_template('articlesList.html')
-	articles = Article.objects.all().order_by('orderNum')
-	now = datetime.now()
+	articles = list()
+	classes = list()
+
+	if className == 'all':
+		articles = Article.objects.all().order_by('orderNum')
+	else:
+		if className == 'linux':
+			classes = Linux.objects.all().order_by('orderNum')
+
+		for every in classes:
+			articles.append(Article.objects.get(aid=every.article.aid))
+
 	html = template.render(locals())
 	return HttpResponse(html)
+
 
 
 def showAboutPage(request):

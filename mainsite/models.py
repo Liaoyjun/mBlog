@@ -39,7 +39,7 @@ class Article(models.Model):
 class Linux(models.Model):
 	lid = models.IntegerField(primary_key=True)
 	orderNum = models.IntegerField()
-	aid = models.ForeignKey('Article', on_delete=models.CASCADE)
+	article = models.ForeignKey('Article', on_delete=models.CASCADE)
 
 	class Meta:
 		ordering = ('-lid',)

@@ -31,13 +31,13 @@
     <nav>
         <ul class="pager">
             {% if preId != -1 %}
-                <li><a href="/post/{{ preId }}">Previous</a></li>
+                <li><a href="/post/{{ className }}/{{ preId }}">Previous</a></li>
             {% else %}
                 <li class="disabled"><a href="#">Previous</a></li>
             {% endif %}
 
             {% if nextId != -1 %}
-                <li><a href="/post/{{ nextId }}">Next</a></li>
+                <li><a href="/post/{{ className }}/{{ nextId }}">Next</a></li>
             {% else %}
                 <li class="disabled"><a href="#">Next</a></li>
             {% endif %}
