@@ -8,7 +8,7 @@ from django.utils import timezone
 
 
 class Article(models.Model):
-	aid = models.IntegerField(primary_key=True)
+	aid = models.CharField(primary_key=True, max_length=200)
 	orderNum = models.IntegerField()
 
 	title = models.CharField(max_length=200)
@@ -27,7 +27,7 @@ class Article(models.Model):
 
 
 class Linux(models.Model):
-	lid = models.IntegerField(primary_key=True)
+	lid = models.CharField(primary_key=True, max_length=200)
 	orderNum = models.IntegerField()
 	article = models.ForeignKey('Article', on_delete=models.CASCADE)
 
