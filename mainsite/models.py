@@ -3,7 +3,11 @@ from django.utils import timezone
 
 # Create your models here.
 
+"""
+Define the database model here, you can define the return value of the model and the default oder.
+When using foreigner key, you have to manually add a sentence "on_delete=models.CASCADE" on the migrations files.
 
+"""
 
 
 

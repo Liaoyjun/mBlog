@@ -13,11 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+
 from django.contrib import admin
 from django.urls import path, re_path
 from mainsite.views import homepage, showArticle, showArticlesList, showAboutPage
 
 
+"""
+There are two method to match the url, one is to match the head of the url, the other is to use regular expression.
+When using regular expression, it will pass the paremeters the the function one by one. The first parameter is the request, the others are the values of "(\w+)".
+"""
 urlpatterns = [
 
     path('admin/', admin.site.urls),
