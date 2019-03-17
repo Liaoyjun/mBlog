@@ -17,6 +17,7 @@ Here i list the all points that should be thought and everything i have done in 
 Debug option: When it is set to TRUE, this application will in DEBug mode, that is to say, when some bug exist, it will show the bug directly on the web browser. On the contrary, if it is set to False, it will show a 502,503 pageon the web browser, and you have to look up the bug in the log file.
 
 INSTALLED_APPS: I have add two app to here, they are 'markdown_deux' and 'mainsite'. Actually 'mainsite' is the app for the website, add it to take effect. Add 'markdown_deux' and then we can use the function of Markdown.
+  Add 'django.contrib.sitemaps' for the site map function.
 
 TEMPLATES: The key-value pair " 'DIRS': [os.path.join(BASE_DIR, 'templates')] " means that, when we use the method of get_template, it will search the html template under the path of "BASE_DIR/templates", to be more precise, the BASE_DIR is the path of the project, for example, now the BASE_DIR is /var/www/mBlog/mBlog, and the templates path is /var/www/mBlog/mBlog/templates.
 
@@ -27,6 +28,7 @@ STATIC_URL: Here set the static file keyword path to be '/static/', and then whe
 STATIC_ROOT: Set a static root, when runing the command '  ', it will collect all the static source into this file. This file is work for the web server, because when the browser ask some static source, we return them from web server, such as nginx, instead of django. 
 
 STATICFILES_DIRS: If you have some static source that is used by several application, you can create a more file to store these common static source, and add this file into the search scope, which means that when some static source is needed, it will search not only the path under all the app, but also the file you add in STATICFILES_DIRS.
+
 
 """
 
@@ -63,6 +65,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'markdown_deux',
     'mainsite',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [

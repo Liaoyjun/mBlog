@@ -18,7 +18,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from mainsite.views import homepage, showArticle, showArticlesList, showAboutPage
-
+from django.contrib.sitemaps.views import sitemap
+from mainsite.views import BlogSitemap
 
 """
 There are two method to match the url, one is to match the head of the url, the other is to use regular expression.
@@ -31,8 +32,10 @@ urlpatterns = [
     path('about/', showAboutPage),
     re_path(r'^article/(\w+)/(\w+)/$', showArticle),
     # re_path(r'^post/(?P<classification>\w+)/(?P<aid>\w+)/$', showArticlesList3)
-    re_path(r'^article/(\w+)/$', showArticlesList)
+    re_path(r'^article/(\w+)/$', showArticlesList),
 
+    # for the sitemap function
+    re_path(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': BlogSitemap}}, name='django.contrib.sitemaps.views.sitemap')
 ]
 
 

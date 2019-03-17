@@ -5,6 +5,7 @@ from .models import  Article, Linux
 from django.template.loader import get_template
 from django.http import HttpResponse
 from datetime import datetime
+from django.contrib.sitemaps import Sitemap
 
 
 # return the homepage
@@ -37,14 +38,17 @@ def showArticle(request, className, aid):
 				articles.append(Article.objects.get(aid=every.article.aid))
 			n = len(articles)
 
-## Get the article requested.
-		article = Article.objects.get(aid=aid)
-
-# Get the id list from the "articles" list.
+		# Get the id list from the "articles" list.
+		# id list store all the id of the articles that match the class chosen
 		for article in articles:
 			idList.append(article.aid)
 
-## Get the current index.
+## Get the article requested.
+		article = Article.objects.get(aid=aid)
+
+
+
+## Get the current index of the article according the aid
 		index = idList.index(article.aid)
 
 ## Get the preId and nextId.
@@ -84,3 +88,19 @@ def showArticlesList(request, className):
 # return the aboutpage
 def showAboutPage(request):
 	return HttpResponse(get_template('about.html').render())
+
+# before this function, it is neccessary to import Sitemap
+# add a function for displaying the sitemap of the blog
+# the modDate and aid is the attribute oof the model Article
+class BlogSitemap(Sitemap):
+    changefreq = "daily"
+    priority = 0.5
+
+    def items(self):
+        return Article.objects.all()
+
+    def lastmod(self, obj):
+        return obj.modDate
+
+    def location(self, obj):
+        return obj.aid
