@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, re_path
-from mainsite.views import homepage, showArticle, showArticlesList, showAboutPage
+from mainsite.views import homepage, showArticle, showArticlesList, showAboutPage, showCPUTemperature
 from django.contrib.sitemaps.views import sitemap
 from mainsite.views import BlogSitemap
 
@@ -35,7 +35,11 @@ urlpatterns = [
     re_path(r'^article/(\w+)/$', showArticlesList),
 
     # for the sitemap function
-    re_path(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': BlogSitemap}}, name='django.contrib.sitemaps.views.sitemap')
+    re_path(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': BlogSitemap}}, name='django.contrib.sitemaps.views.sitemap'),
+
+    #show CPU Temperature
+    re_path(r'^temp/', showCPUTemperature)
+
 ]
 
 

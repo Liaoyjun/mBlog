@@ -6,7 +6,8 @@ from django.template.loader import get_template
 from django.http import HttpResponse
 from datetime import datetime
 from django.contrib.sitemaps import Sitemap
-
+# for get the cpu temperature of pi
+import os
 
 # return the homepage
 # # The method of get_template will search the html file under the path BASE_DIR/templates
@@ -104,3 +105,15 @@ class BlogSitemap(Sitemap):
 
     def location(self, obj):
         return obj.aid
+
+
+# get the cpu temperature of pi
+# later change to use js to realize this function.
+def showCPUTemperature(request):
+	template = get_template('temperature.html')
+	res = os.popen('vcgencmd measure_temp').readline()
+	CPU_temp = res.replace("temp=", "").replace("'C\n", "")
+	# print('CPU Temperature = ' + CPU_temp)
+
+	html = template.render(locals())
+	return HttpResponse(html)
