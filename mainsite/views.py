@@ -83,6 +83,7 @@ def show_article(request, className, aid):
 
 		# Return the request.
 		if article is not None:
+				# Use render method to transfer variables to the html template.
 			html = template.render(locals())
 			return HttpResponse(html)
 	except:
