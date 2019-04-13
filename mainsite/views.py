@@ -1,22 +1,48 @@
-# Create your views here.
+"""
+================================================================================
+* File name:
+* Author:LYJ
+* Description: Create views here.
+* Attention:
+================================================================================
+* Modifier:LYJ
+* Modification time: 2019-04-13
+* Modify content: Modify the code according to the google code style.
+================================================================================
+"""
+
 
 from django.shortcuts import redirect
-from .models import  Article, Linux
+from .models import Article
+from .models import Linux
 from django.template.loader import get_template
 from django.http import HttpResponse
-from datetime import datetime
+# from datetime import datetime
 from django.contrib.sitemaps import Sitemap
-# for get the cpu temperature of pi
-import os
+import os # Used to get the cpu temperature of pi
 
-# return the homepage
-# # The method of get_template will search the html file under the path BASE_DIR/templates
-def homepage(request):
+
+def index_page(request):
+	"""Return the index page
+
+	:param request:
+	:return:
+	"""
+	# get_template method will search the html template file under
+	# the path BASE_DIR/templates
 	return HttpResponse(get_template('index.html').render())
 
 
-def showArticle(request, className, aid):
-# if something error happen here, it will redirect to 404 page
+def show_article(request, className, aid):
+	"""Return the article requested
+
+	:param request:
+	:param className:
+	:param aid:
+	:return:
+	"""
+
+	# If an error is triggered here, redirect to 404 page.
 	try:
 		articles = list()
 		classes = list()
@@ -26,11 +52,10 @@ def showArticle(request, className, aid):
 		template = get_template('article.html')
 		idList = list()
 
-## get a list "articles" which contain the articles requested.
-## n is the length of the "articles".
+		# get a list "articles" which contains the articles requested.
 		if className == 'all':
 			articles = Article.objects.all().order_by('orderNum')
-			n = articles.count()
+			n = articles.count() # the length of the "articles".
 		else:
 			if className == 'linux':
 				classes = Linux.objects.all().order_by('orderNum')
@@ -40,25 +65,23 @@ def showArticle(request, className, aid):
 			n = len(articles)
 
 		# Get the id list from the "articles" list.
-		# id list store all the id of the articles that match the class chosen
+		# id list store all the id of the articles that match the class chosen.
 		for article in articles:
 			idList.append(article.aid)
 
-## Get the article requested.
+		# Get the article requested.
 		article = Article.objects.get(aid=aid)
 
-
-
-## Get the current index of the article according the aid
+		# Get the current index of the article according the aid
 		index = idList.index(article.aid)
 
-## Get the preId and nextId.
+		# Get the preId and nextId.
 		if index != 0:
 			preId = idList[index-1]
 		if index != n-1:
 			nextId = idList[index+1]
 
-## Return the request.
+		# Return the request.
 		if article is not None:
 			html = template.render(locals())
 			return HttpResponse(html)
@@ -66,9 +89,13 @@ def showArticle(request, className, aid):
 		return redirect('/404')
 
 
+def show_articles_list(request, className):
+	"""return the articles list requested.
 
-# return the articles list according to the list name
-def showArticlesList(request, className):
+	:param request:
+	:param className:
+	:return:
+	"""
 	template = get_template('articlesList.html')
 	articles = list()
 	classes = list()
@@ -85,35 +112,45 @@ def showArticlesList(request, className):
 	html = template.render(locals())
 	return HttpResponse(html)
 
-
 # return the aboutpage
-def showAboutPage(request):
+def show_about_page(request):
+	"""Return the about page.
+
+	:param request:
+	:return:
+	"""
 	return HttpResponse(get_template('about.html').render())
 
-# before this function, it is neccessary to import Sitemap
-# add a function for displaying the sitemap of the blog
-# the modDate and aid is the attribute oof the model Article
+
 class BlogSitemap(Sitemap):
-    changefreq = "daily"
-    priority = 0.5
+	"""Basic class for displaying the sitemap of the blog.
 
-    def items(self):
-        return Article.objects.all()
+	Need to import Sitemap first.
+	modDate and aid are attributes from data model Article
+	"""
+	changefreq = "daily"
+	priority = 0.5
 
-    def lastmod(self, obj):
-        return obj.modDate
+	def items(self):
+		return Article.objects.all()
 
-    def location(self, obj):
-        return obj.aid
+	def lastmod(self, obj):
+		return obj.modDate
+
+	def location(self, obj):
+		return obj.aid
 
 
-# get the cpu temperature of pi
-# later change to use js to realize this function.
-def showCPUTemperature(request):
+# TODO(LYJ):Use js to realize this function.
+def show_cpu_temperature(request):
+	"""Get the cpu temperature of pi.
+
+	:param request:
+	:return:
+	"""
 	template = get_template('temperature.html')
 	res = os.popen('vcgencmd measure_temp').readline()
 	CPU_temp = res.replace("temp=", "").replace("'C\n", "")
 	# print('CPU Temperature = ' + CPU_temp)
-
 	html = template.render(locals())
 	return HttpResponse(html)
