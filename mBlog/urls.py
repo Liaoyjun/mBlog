@@ -36,6 +36,7 @@ from mainsite.views import testAP
 from mainsite.views import show_article
 from mainsite.views import show_articles_list
 from mainsite.views import show_about_page
+from mainsite.views import show_contact_page
 from mainsite.views import show_cpu_temperature
 from django.contrib.sitemaps.views import sitemap
 from mainsite.views import BlogSitemap
@@ -45,6 +46,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),
     path('about/', show_about_page),
+    path('contact/', show_contact_page),
     re_path(r'^article/(\w+)/(\w+)/$', show_article),
     # re_path(r'^post/(?P<classification>\w+)/(?P<aid>\w+)/$', showArticlesList3)
     re_path(r'^article/(\w+)/$', show_articles_list),

@@ -41,7 +41,7 @@ def index_page(request):
 	"""
 	# get_template method will search the html template file under
 	# the path BASE_DIR/templates
-	return HttpResponse(get_template('mainsite_html_templates/base.html').render())
+	return HttpResponse(get_template('mainsite/index.html').render())
 
 
 def test(request):
@@ -52,7 +52,7 @@ def test(request):
 	"""
 	# get_template method will search the html template file under
 	# the path BASE_DIR/templates
-	return HttpResponse(get_template('mainsite_html_templates/article_list.html').render())
+	return HttpResponse(get_template('mainsite/article_list/article_list.html').render())
 
 def testAP(request):
 	"""Return the index page
@@ -62,7 +62,7 @@ def testAP(request):
 	"""
 	# get_template method will search the html template file under
 	# the path BASE_DIR/templates
-	return HttpResponse(get_template('mainsite_html_templates/contact.html').render())
+	return HttpResponse(get_template('mainsite/article_detail/article_detail.html').render())
 
 def show_article(request, className, aid):
 	"""Return the article requested
@@ -128,7 +128,7 @@ def show_articles_list(request, className):
 	:param className:
 	:return:
 	"""
-	template = get_template('article_list.html')
+	template = get_template('mainsite/article_list/article_list.html')
 	articles = list()
 	classes = list()
 
@@ -151,8 +151,17 @@ def show_about_page(request):
 	:param request:
 	:return:
 	"""
-	return HttpResponse(get_template('about_author_page.html').render())
+	return HttpResponse(get_template('mainsite/about_author_page.html').render())
 
+
+# return the aboutpage
+def show_contact_page(request):
+	"""Return the about page.
+
+	:param request:
+	:return:
+	"""
+	return HttpResponse(get_template('mainsite/contact.html').render())
 
 class BlogSitemap(Sitemap):
 	"""Basic class for displaying the sitemap of the blog.

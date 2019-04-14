@@ -33,10 +33,13 @@
 
 
     <body>
-        {% include 'mainsite_html_templates/base_navigator.html' %}
+        {% include 'base/base_navigator.html' %}
         {% block title %}{% endblock %}
         {% block content %}{% endblock %}
-        {% include 'mainsite_html_templates/base_footer.html' %}
+        {% include 'base/base_footer.html' %}
+
+        <!-- js -->
+        <script src="{% static "mainsite/js/script.js" %}"></script>
     </body>
 
 
