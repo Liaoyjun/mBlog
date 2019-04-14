@@ -1,0 +1,43 @@
+<!-- base.html -->
+<!-- add bootstrap -->
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- css -->
+        <link rel="stylesheet" href="{% static "mainsite/css/bootstrap.min.css" %}"  >
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="{% static "mainsite/css/pace.css" %}">
+        <link rel="stylesheet" href="{% static "mainsite/css/custom.css" %}">
+
+        <!-- js -->
+        <script src="{% static "mainsite/js/jquery-2.1.3.min.js" %}"></script>
+        <script src="{% static "mainsite/js/bootstrap.min.js" %}"></script>
+        <script src="{% static "mainsite/js/pace.min.js" %}"></script>
+        <script src="{% static "mainsite/js/modernizr.custom.js" %}"></script>
+
+        <!-- icon -->
+        <link rel="icon" href="{% static 'mainsite/images/favicon.ico' %}">
+        <link rel="shortcut icon" href="{% static 'mainsite/images/favicon.ico' %}">
+        <link rel="bookmark" href="{% static 'mainsite/images/favicon.ico' %}">
+
+        <!-- title on the head of the web tab -->
+        <title>{% block httpHead %}{% endblock %}</title>
+    </head>
+
+
+    <body>
+        {% include 'mainsite_html_templates/base_navigator.html' %}
+        {% block title %}{% endblock %}
+        {% block content %}{% endblock %}
+        {% include 'mainsite_html_templates/base_footer.html' %}
+    </body>
+
+
+</html>

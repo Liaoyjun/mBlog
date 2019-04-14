@@ -22,6 +22,17 @@ from django.contrib.sitemaps import Sitemap
 import os # Used to get the cpu temperature of pi
 
 
+# def index_page(request):
+# 	"""Return the index page
+#
+# 	:param request:
+# 	:return:
+# 	"""
+# 	# get_template method will search the html template file under
+# 	# the path BASE_DIR/templates
+# 	return HttpResponse(get_template('index.html').render())
+
+
 def index_page(request):
 	"""Return the index page
 
@@ -30,8 +41,28 @@ def index_page(request):
 	"""
 	# get_template method will search the html template file under
 	# the path BASE_DIR/templates
-	return HttpResponse(get_template('index.html').render())
+	return HttpResponse(get_template('mainsite_html_templates/base.html').render())
 
+
+def test(request):
+	"""Return the index page
+
+	:param request:
+	:return:
+	"""
+	# get_template method will search the html template file under
+	# the path BASE_DIR/templates
+	return HttpResponse(get_template('mainsite_html_templates/article_list.html').render())
+
+def testAP(request):
+	"""Return the index page
+
+	:param request:
+	:return:
+	"""
+	# get_template method will search the html template file under
+	# the path BASE_DIR/templates
+	return HttpResponse(get_template('mainsite_html_templates/contact.html').render())
 
 def show_article(request, className, aid):
 	"""Return the article requested
@@ -49,7 +80,7 @@ def show_article(request, className, aid):
 		preId = -1
 		nextId = -1
 		n = 0
-		template = get_template('article.html')
+		template = get_template('article_detail.html')
 		idList = list()
 
 		# get a list "articles" which contains the articles requested.
@@ -97,7 +128,7 @@ def show_articles_list(request, className):
 	:param className:
 	:return:
 	"""
-	template = get_template('articlesList.html')
+	template = get_template('article_list.html')
 	articles = list()
 	classes = list()
 
@@ -120,7 +151,7 @@ def show_about_page(request):
 	:param request:
 	:return:
 	"""
-	return HttpResponse(get_template('about.html').render())
+	return HttpResponse(get_template('about_author_page.html').render())
 
 
 class BlogSitemap(Sitemap):
@@ -149,7 +180,7 @@ def show_cpu_temperature(request):
 	:param request:
 	:return:
 	"""
-	template = get_template('temperature.html')
+	template = get_template('show_pi_temperature.html')
 	res = os.popen('vcgencmd measure_temp').readline()
 	CPU_temp = res.replace("temp=", "").replace("'C\n", "")
 	# print('CPU Temperature = ' + CPU_temp)
