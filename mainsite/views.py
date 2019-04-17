@@ -80,7 +80,9 @@ def show_article(request, className, aid):
 		preId = -1
 		nextId = -1
 		n = 0
-		template = get_template('article_detail.html')
+
+		# template = get_template('article_detail.html')
+		template = get_template('mainsite/article_detail/article_detail.html')
 		idList = list()
 
 		# get a list "articles" which contains the articles requested.

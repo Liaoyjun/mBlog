@@ -1,25 +1,30 @@
-<div class="content-body">
-    <div class="container">
-        <div class="row">
-            <main class="col-md-8">
-                <article class="post post-1">
-                    {% include 'mainsite/article_list/article_list_head_info.html' %}
+{% extends 'base/base.html' %}
+{% block httpHead %}Welcome here{% endblock %}
+{%  block content %}
+    <div class="content-body">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-10">
+                    <article class="post post-1">
+                        <!-- article head infomation -->
+                        {% include 'mainsite/article_list/article_list_head_info.html' %}
 
-                    <!-- article body -->
+                        <!-- article body -->
+                        {% include 'mainsite/article_detail/article_detail_body.html' %}
+                        {% include 'mainsite/article_detail/article_detail_navigation.html' %}
+                    </article>
 
-                </article>
+                    <!-- TODO(LYJ): article detail comment area-->
+                    <!-- article detail comment area -->
+                    {% include 'mainsite/article_detail/article_detail_comment_area.html' %}
+                </main>
 
-                <!-- TODO(LYJ): article detail comment area-->
-                <!-- article detail comment area -->
-                {% include 'mainsite/article_detail/article_detail_comment_area.html' %}
-            </main>
-
-            <aside class="col-md-4">
-                {% include 'mainsite/article_detail/article_detail_content.html' %}
-            </aside>
+                <aside class="col-md-2">
+                    {% include 'mainsite/article_detail/article_detail_content.html' %}
+                </aside>
 
         </div>
+        </div>
     </div>
-</div>
 
-
+{% endblock %}
