@@ -31,8 +31,6 @@ are the values of "(\w+)".
 from django.contrib import admin
 from django.urls import path, re_path
 from mainsite.views import index_page
-from mainsite.views import test
-from mainsite.views import testAP
 from mainsite.views import show_article
 from mainsite.views import show_articles_list
 from mainsite.views import show_about_page
@@ -40,7 +38,6 @@ from mainsite.views import show_contact_page
 from mainsite.views import show_cpu_temperature
 from django.contrib.sitemaps.views import sitemap
 from mainsite.views import BlogSitemap
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -54,8 +51,8 @@ urlpatterns = [
     re_path(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': BlogSitemap}}, name='django.contrib.sitemaps.views.sitemap'),
     #show CPU Temperature
     re_path(r'^temp/', show_cpu_temperature),
-    path('TAL/', test),
-    path('TAP/', testAP)
+
+
 ]
 
 

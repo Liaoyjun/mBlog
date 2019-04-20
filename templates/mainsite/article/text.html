@@ -1,0 +1,13 @@
+{% load markdown_deux_tags %}
+
+<article class="post post-1">
+    <!-- article head infomation -->
+    {% include 'mainsite/article_list/head_info.html' %}
+    <!-- article body -->
+    <div class="entry-content clearfix">
+        <p>{{ article.body | markdown }}</p>
+    </div>
+</article>
+
+
+

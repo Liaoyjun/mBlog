@@ -1,0 +1,83 @@
+<!-- base.html -->
+<!-- add bootstrap -->
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+
+        <!-- base css -->
+        <link rel="stylesheet" href="{% static "mainsite/css/custom.css" %}">
+        <link rel="stylesheet" href="{% static "mainsite/css/bootstrap.min.css" %}"  >
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="{% static "mainsite/css/pace.css" %}">
+        <script src="{% static "mainsite/js/script.js" %}"></script>
+
+        <!-- base js -->
+        <script src="{% static "mainsite/js/jquery-2.1.3.min.js" %}"></script>
+        <script src="{% static "mainsite/js/bootstrap.min.js" %}"></script>
+        <script src="{% static "mainsite/js/pace.min.js" %}"></script>
+        <script src="{% static "mainsite/js/modernizr.custom.js" %}"></script>
+
+        <!-- sidebar css -->
+        <link rel="stylesheet" href="{% static "mainsite/css/main.css" %}">
+        <link rel="stylesheet" href="{% static "mainsite/css/sidebar-themes.css" %}">
+        <link rel="stylesheet" href="{% static "mainsite/img/favicon.png" %}">
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+
+        <!-- sidebar js -->
+        <script src="{% static "mainsite/js/main.js" %}"></script>
+
+
+        <!-- icon -->
+        <link rel="icon" href="{% static 'mainsite/images/favicon.ico' %}">
+        <link rel="shortcut icon" href="{% static 'mainsite/images/favicon.ico' %}">
+        <link rel="bookmark" href="{% static 'mainsite/images/favicon.ico' %}">
+
+        <!-- title on the head of the web tab -->
+        <title>{% block httpHead %}{% endblock %}</title>
+    </head>
+
+
+    <body>
+        <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    {% include 'sidebar/header.html' %}
+                    {% include 'sidebar/menu.html' %}
+                </div>
+                {% include 'sidebar/footer.html' %}
+            </nav>
+
+            <main class="page-content pt-2">
+                <div id="overlay" class="overlay"></div>
+                <div class="container-fluid p-5">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            {% include 'mainsite/base/navigator.html' %}
+                            {% block content %}{% endblock %}
+                            {% include 'mainsite/base/footer.html' %}
+{#                            {% include 'sidebar/control.html' %}#}
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+
+
+        <!-- base js -->
+
+
+        <!-- sidebar js -->
+    </body>
+
+
+</html>

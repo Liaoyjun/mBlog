@@ -1,0 +1,24 @@
+{% extends 'mainsite/base/base.html' %}
+{% block httpHead %}Welcome here{% endblock %}
+{%  block content %}
+    <div class="content-body">
+        <div class="container">
+            <div class="row">
+                <!-- article-->
+                <main class="col-md-10">
+                    {% include 'mainsite/article/text.html' %}
+                    <!-- previous or next article botton -->
+                    {% include 'mainsite/article/previous_next_article.html' %}
+                    <!-- TODO(LYJ): article detail comment area-->
+                    <!-- article detail comment area -->
+                    {% include 'mainsite/extended_component/comment.html' %}
+                </main>
+                <!-- side bar to show content of article. -->
+                <aside class="col-md-2">
+                    {% include 'mainsite/article/content.html' %}
+                </aside>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

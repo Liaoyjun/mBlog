@@ -9,6 +9,9 @@
 * Modification time: 2019-04-13
 * Modify content: Modify the code according to the google code style.
 ================================================================================
+* Modifier:LYJ
+* Modification time: 2019-04-17
+* Modify content: Improve the front end.
 """
 
 
@@ -22,16 +25,6 @@ from django.contrib.sitemaps import Sitemap
 import os # Used to get the cpu temperature of pi
 
 
-# def index_page(request):
-# 	"""Return the index page
-#
-# 	:param request:
-# 	:return:
-# 	"""
-# 	# get_template method will search the html template file under
-# 	# the path BASE_DIR/templates
-# 	return HttpResponse(get_template('index.html').render())
-
 
 def index_page(request):
 	"""Return the index page
@@ -43,26 +36,6 @@ def index_page(request):
 	# the path BASE_DIR/templates
 	return HttpResponse(get_template('mainsite/index.html').render())
 
-
-def test(request):
-	"""Return the index page
-
-	:param request:
-	:return:
-	"""
-	# get_template method will search the html template file under
-	# the path BASE_DIR/templates
-	return HttpResponse(get_template('mainsite/article_list/article_list.html').render())
-
-def testAP(request):
-	"""Return the index page
-
-	:param request:
-	:return:
-	"""
-	# get_template method will search the html template file under
-	# the path BASE_DIR/templates
-	return HttpResponse(get_template('mainsite/article_detail/article_detail.html').render())
 
 def show_article(request, className, aid):
 	"""Return the article requested
@@ -81,8 +54,8 @@ def show_article(request, className, aid):
 		nextId = -1
 		n = 0
 
-		# template = get_template('article_detail.html')
-		template = get_template('mainsite/article_detail/article_detail.html')
+		# template = get_template('article.html')
+		template = get_template('mainsite/article/article.html')
 		idList = list()
 
 		# get a list "articles" which contains the articles requested.
