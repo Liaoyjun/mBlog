@@ -23,23 +23,24 @@
         <script src="{% static "mainsite/js/pace.min.js" %}"></script>
         <script src="{% static "mainsite/js/modernizr.custom.js" %}"></script>
 
+
         <!-- sidebar css -->
         <link rel="stylesheet" href="{% static "mainsite/css/main.css" %}">
         <link rel="stylesheet" href="{% static "mainsite/css/sidebar-themes.css" %}">
-        <link rel="stylesheet" href="{% static "mainsite/img/favicon.png" %}">
+{#        <link rel="stylesheet" href="{% static "mainsite/img/favicon.png" %}">#}
 
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+{#        <link rel="bookmark" href="{% static 'mainsite/images/favicon.ico' %}">rigin="anonymous">#}
+{#        <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">#}
 
         <!-- sidebar js -->
         <script src="{% static "mainsite/js/main.js" %}"></script>
 
 
         <!-- icon -->
-        <link rel="icon" href="{% static 'mainsite/images/favicon.ico' %}">
-        <link rel="shortcut icon" href="{% static 'mainsite/images/favicon.ico' %}">
-        <link rel="bookmark" href="{% static 'mainsite/images/favicon.ico' %}">
+        <link rel="icon" href="{% static 'mainsite/img/favicon.ico' %}">
+        <link rel="shortcut icon" href="{% static 'mainsite/img/favicon.ico' %}">
 
         <!-- title on the head of the web tab -->
         <title>{% block httpHead %}{% endblock %}</title>
@@ -50,10 +51,11 @@
         <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content">
-                    {% include 'sidebar/header.html' %}
-                    {% include 'sidebar/menu.html' %}
+                    {% include 'mainsite/base/sidebar/header.html' %}
+                    {% include 'mainsite/base/sidebar/menu.html' %}
                 </div>
-                {% include 'sidebar/footer.html' %}
+                <!--  TODO(LYJ) -->
+{#                {% include 'sidebar/footer.html' %}#}
             </nav>
 
             <main class="page-content pt-2">
@@ -64,6 +66,7 @@
                             {% include 'mainsite/base/navigator.html' %}
                             {% block content %}{% endblock %}
                             {% include 'mainsite/base/footer.html' %}
+                            <!-- TODO(LYJ) -->
 {#                            {% include 'sidebar/control.html' %}#}
                         </div>
                     </div>
@@ -72,11 +75,8 @@
         </div>
 
 
-
-        <!-- base js -->
-
-
-        <!-- sidebar js -->
+        <!-- js -->
+        <script src="{% static "mainsite/js/script.js" %}"></script>
     </body>
 
 
