@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba4ff65-c117-4f2b-9fc2-e920c646c56d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backup/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainsite/static/mainsite/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainsite/static/mainsite/img/user.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainsite/base/sidebar/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/static/mainsite/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/static/mainsite/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/static/mainsite/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/static/mainsite/img/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mainsite/css/blog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mainsite/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mainsite/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mainsite/images/ra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mainsite/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainsite/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/base/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/base/navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/base/navigator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebar/control.html" beforeDir="false" afterPath="$PROJECT_DIR$/backup/control.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebar/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/backup/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebar/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/backup/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sidebar/menu.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,17 +32,44 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mainsite/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="41" column="66" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="66" />
+            <state relative-caret-position="261">
+              <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/admin.py">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backup/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="319">
+              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigator.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/mainsite/base/navigator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -107,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/mainsite_html_templates/article_list.html" />
         <option value="$PROJECT_DIR$/templates/mainsite_html_templates/sidebar.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_list.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/about_author_page.html" />
@@ -154,10 +161,11 @@
         <option value="$PROJECT_DIR$/templates/sidebar/header.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article/article.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/menu.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/base/navigator.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" />
         <option value="$PROJECT_DIR$/mainsite/static/mainsite/css/main.css" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/base.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/base/navigator.html" />
       </list>
     </option>
   </component>
@@ -169,9 +177,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="153" />
-    <option name="y" value="-23" />
-    <option name="width" value="1946" />
-    <option name="height" value="1106" />
+    <option name="y" value="-24" />
+    <option name="width" value="1947" />
+    <option name="height" value="1107" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -193,54 +201,28 @@
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="mainsite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,18 +311,18 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\mBlog\templates\mainsite\base\sidebar" />
+      <recent name="D:\pythonProject\mBlog\mainsite\static\mainsite\img" />
+      <recent name="D:\pythonProject\mBlog\backup" />
+      <recent name="D:\pythonProject\mBlog\static\mainsite\images" />
+      <recent name="D:\pythonProject\mBlog\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pythonProject\mBlog\mainsite\static\mainsite\img" />
       <recent name="D:\pythonProject\mBlog\templates\mainsite\base" />
       <recent name="D:\pythonProject\mBlog\templates\sidebar" />
       <recent name="D:\pythonProject\mBlog\templates\mainsite\extended_component" />
-      <recent name="D:\pythonProject\mBlog\templates\mainsite" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\pythonProject\mBlog\mainsite\static\mainsite\img" />
-      <recent name="D:\pythonProject\mBlog\backup" />
-      <recent name="D:\pythonProject\mBlog\static\mainsite\images" />
-      <recent name="D:\pythonProject\mBlog\templates" />
       <recent name="D:\pythonProject\mBlog\templates\mainsite" />
     </key>
   </component>
@@ -433,18 +415,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.60367894" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.502021" side_tool="true" weight="0.3277592" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987874" weight="0.3277592" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.497979" weight="0.5451505" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.15384616" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.33779263" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.6688963" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60714287" visible="true" weight="0.24171382" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60714287" weight="0.2069523" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.2993311" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.39285713" side_tool="true" weight="0.22069523" />
       <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
@@ -455,29 +437,30 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2993311" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.3110368" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60714287" visible="true" weight="0.22312045" />
       <window_info id="Structure" order="1" sideWeight="0.39285713" side_tool="true" weight="0.39773646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.60367894" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987874" weight="0.3277592" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.3110368" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.67558527" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.497979" weight="0.5451505" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.6688963" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.502021" side_tool="true" weight="0.3277592" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987874" weight="0.3277592" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.67558527" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.497979" weight="0.5451505" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,6 +470,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="41" column="66" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/about_author_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -660,34 +657,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/img/user.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/404/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="3" column="429" selection-start-line="3" selection-start-column="429" selection-end-line="3" selection-end-column="429" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/img/bg1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/img/bg2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/img/bg4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/img/bg3.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://D:/Anaconda3/pkgs/notebook-5.5.0-py36_0/Lib/site-packages/notebook/static/style/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -703,13 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sidebar/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar/footer.html" />
     <entry file="file://$PROJECT_DIR$/mainsite/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -731,22 +700,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/navigator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/pagination.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/article_list.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -769,9 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/img/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -779,17 +735,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup/control.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/navigator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
