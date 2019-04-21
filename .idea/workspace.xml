@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba4ff65-c117-4f2b-9fc2-e920c646c56d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/base/navigator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,11 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigator.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigator.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mainsite/base/navigator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="87">
+              <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -69,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
-              <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="4" />
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -115,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/mainsite_html_templates/sidebar.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_list.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/about_author_page.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/contact.html" />
@@ -166,6 +172,7 @@
         <option value="$PROJECT_DIR$/templates/mainsite/base/base.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/navigator.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html" />
       </list>
     </option>
   </component>
@@ -714,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/css/sidebar-themes.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -759,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -775,8 +768,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/base/navigator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="87">
+          <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
