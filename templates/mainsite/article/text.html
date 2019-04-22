@@ -5,7 +5,7 @@
     {% include 'mainsite/article_list/head_info.html' %}
     <!-- article body -->
     <div class="entry-content clearfix">
-        <p>{{ article.body | markdown }}</p>
+        <p>{{ article.body | safe }}</p>
     </div>
 </article>
 

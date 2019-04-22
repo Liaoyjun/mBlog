@@ -23,6 +23,9 @@ from django.http import HttpResponse
 # from datetime import datetime
 from django.contrib.sitemaps import Sitemap
 import os # Used to get the cpu temperature of pi
+import markdown
+from django.utils.text import slugify
+from markdown.extensions.toc import TocExtension
 
 
 
@@ -77,6 +80,23 @@ def show_article(request, className, aid):
 
 		# Get the article requested.
 		article = Article.objects.get(aid=aid)
+		# Use Markdown to render the article, including hightlighting the code,
+		# generating the content of article.
+		md = markdown.Markdown(extensions=[
+		# inclede extention of abbreviation, table, etc.
+		'markdown.extensions.extra',
+		# TODO(LYJ):code hightlight
+		# inclede extention of highlighting code.
+		'markdown.extensions.codehilite',
+			# inclede extention of generating the content of article.
+		# 'markdown.extensions.toc',
+		TocExtension(slugify=slugify),
+        ])
+		article.body = md.convert(article.body)
+		article.toc = md.toc
+
+
+
 
 		# Get the current index of the article according the aid
 		index = idList.index(article.aid)
