@@ -29,7 +29,7 @@ class Article(models.Model):
 	picURL =  models.CharField(max_length=200)
 
 	class Meta:
-		ordering = ('-pubDate',)  # Ordered by published data
+		ordering = ('-publish_date',)  # Ordered by published data
 
 	def __unicode__(self):
 		return self.title

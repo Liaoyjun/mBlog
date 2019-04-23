@@ -9124,7 +9124,7 @@ jQuery.extend( {
 			// Put hash and anti-cache on the URL that will be requested (gh-1732)
 			s.url = cacheURL + uncached;
 
-		// Change '%20' to '+' if this is encoded form body content (gh-2658)
+		// Change '%20' to '+' if this is encoded form text content (gh-2658)
 		} else if ( s.data && s.processData &&
 			( s.contentType || "" ).indexOf( "application/x-www-form-urlencoded" ) === 0 ) {
 			s.data = s.data.replace( r20, "+" );
@@ -10080,7 +10080,7 @@ jQuery.fn.extend( {
 	// 1) For the element inside the iframe without offsetParent, this method will return
 	//    documentElement of the parent window
 	// 2) For the hidden or detached element
-	// 3) For body or html element, i.e. in case of the html node - it will return itself
+	// 3) For text or html element, i.e. in case of the html node - it will return itself
 	//
 	// but those exceptions were never presented as a real life use-cases
 	// and might be considered as more preferable results.

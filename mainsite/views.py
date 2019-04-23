@@ -40,11 +40,11 @@ def index_page(request):
 	return HttpResponse(get_template('mainsite/index.html').render())
 
 
-def show_article(request, className, aid):
+def show_article(request, class_name, aid):
 	"""Return the article requested
 
 	:param request:
-	:param className:
+	:param class_name:
 	:param aid:
 	:return:
 	"""
@@ -62,12 +62,12 @@ def show_article(request, className, aid):
 		idList = list()
 
 		# get a list "articles" which contains the articles requested.
-		if className == 'all':
-			articles = Article.objects.all().order_by('orderNum')
+		if class_name == 'all':
+			articles = Article.objects.all().order_by('sequence_number')
 			n = articles.count() # the length of the "articles".
 		else:
-			if className == 'linux':
-				classes = Linux.objects.all().order_by('orderNum')
+			if class_name == 'linux':
+				classes = Linux.objects.all().order_by('sequence_number')
 
 			for every in classes:
 				articles.append(Article.objects.get(aid=every.article.aid))
@@ -92,7 +92,7 @@ def show_article(request, className, aid):
 		# 'markdown.extensions.toc',
 		TocExtension(slugify=slugify),
         ])
-		article.body = md.convert(article.body)
+		article.body = md.convert(article.text)
 		article.toc = md.toc
 
 
@@ -128,10 +128,10 @@ def show_articles_list(request, className):
 	classes = list()
 
 	if className == 'all':
-		articles = Article.objects.all().order_by('orderNum')
+		articles = Article.objects.all().order_by('sequence_number')
 	else:
 		if className == 'linux':
-			classes = Linux.objects.all().order_by('orderNum')
+			classes = Linux.objects.all().order_by('sequence_number')
 
 		for every in classes:
 			articles.append(Article.objects.get(aid=every.article.aid))
@@ -162,7 +162,7 @@ class BlogSitemap(Sitemap):
 	"""Basic class for displaying the sitemap of the blog.
 
 	Need to import Sitemap first.
-	modDate and aid are attributes from data model Article
+	modify_date and aid are attributes from data model Article
 	"""
 	changefreq = "daily"
 	priority = 0.5

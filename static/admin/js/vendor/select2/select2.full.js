@@ -1407,7 +1407,7 @@ S2.define('select2/selection/base',[
   BaseSelection.prototype._handleBlur = function (evt) {
     var self = this;
 
-    // This needs to be delayed as the active element is the body when the tab
+    // This needs to be delayed as the active element is the text when the tab
     // key is pressed, possibly along with others.
     window.setTimeout(function () {
       // Don't trigger `blur` if the focus is still in the selection
@@ -6201,7 +6201,7 @@ S2.define('select2/selection/stopPropagation',[
             var $elem = $(elem),
                 $parent = $elem['offsetParent' in $.fn ? 'offsetParent' : 'parent']();
             if (!$parent.length) {
-                $parent = $('body');
+                $parent = $('text');
             }
             return parseInt($parent.css('fontSize'), 10) || parseInt($elem.css('fontSize'), 10) || 16;
         },

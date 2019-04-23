@@ -150,7 +150,7 @@
             event.preventDefault();
             opener.dismissRelatedLookupPopup(window, $(this).data("popup-opener"));
         });
-        $('body').on('click', '.related-widget-wrapper-link', function(e) {
+        $('text').on('click', '.related-widget-wrapper-link', function(e) {
             e.preventDefault();
             if (this.href) {
                 var event = $.Event('django:show-related', {href: this.href});
@@ -160,7 +160,7 @@
                 }
             }
         });
-        $('body').on('change', '.related-widget-wrapper select', function(e) {
+        $('text').on('change', '.related-widget-wrapper select', function(e) {
             var event = $.Event('django:update-related');
             $(this).trigger(event);
             if (!event.isDefaultPrevented()) {
@@ -168,7 +168,7 @@
             }
         });
         $('.related-widget-wrapper select').trigger('change');
-        $('body').on('click', '.related-lookup', function(e) {
+        $('text').on('click', '.related-lookup', function(e) {
             e.preventDefault();
             var event = $.Event('django:lookup-related');
             $(this).trigger(event);

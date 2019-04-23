@@ -17,13 +17,13 @@ class Migration(migrations.Migration):
                 ('aid', models.IntegerField(primary_key=True, serialize=False)),
                 ('title', models.CharField(max_length=200)),
                 ('abstract', models.CharField(max_length=400)),
-                ('body', models.TextField()),
-                ('pubDate', models.DateTimeField(default=django.utils.timezone.now)),
-                ('modDate', models.DateTimeField(default=django.utils.timezone.now)),
-                ('picURL', models.CharField(max_length=200)),
+                ('text', models.TextField()),
+                ('publish_date', models.DateTimeField(default=django.utils.timezone.now)),
+                ('modify_date', models.DateTimeField(default=django.utils.timezone.now)),
+                ('picture_URL', models.CharField(max_length=200)),
             ],
             options={
-                'ordering': ('-pubDate',),
+                'ordering': ('-publish_date',),
             },
         ),
         migrations.CreateModel(
@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),
                 ('title', models.CharField(max_length=200)),
                 ('slug', models.CharField(max_length=200)),
-                ('body', models.TextField()),
+                ('text', models.TextField()),
                 ('pub_date', models.DateTimeField(default=django.utils.timezone.now)),
             ],
             options={

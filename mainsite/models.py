@@ -12,34 +12,60 @@
 ================================================================================
 """
 
+
 from django.db import models
 from django.utils import timezone
+
+
+class Category(models.Model):
+	"""
+
+	"""
+	cid = models.CharField(primary_key=True, max_length=200)
+	name = models.CharField(max_length=200)
+
+	def __unicode__(self):
+		return self.cid
+
+
+class Tag(models.Model):
+	"""
+
+	"""
+	tid = models.CharField(primary_key=True, max_length=200)
+	name = models.CharField(max_length=200)
+
+	def __unicode__(self):
+		return self.tid
 
 
 # TODO(LYJ): Change the attribute name according to google code style.
 class Article(models.Model):
 	"""Basic class of post article"""
-	aid = models.CharField(primary_key=True, max_length=200)
-	orderNum = models.IntegerField()
+	aid = models.CharField(primary_key=True, max_length=200) # aid is used as the slug.
+	sequence_number = models.IntegerField()
 	title = models.CharField(max_length=200)
 	abstract = models.CharField(max_length=400)
-	body = models.TextField()
-	pubDate = models.DateTimeField(default=timezone.now)
-	modDate = models.DateTimeField(default=timezone.now)
-	picURL =  models.CharField(max_length=200)
+	text = models.TextField()
+	publish_date = models.DateTimeField(default=timezone.now)
+	modify_date = models.DateTimeField(default=timezone.now)
+	# TODO(LYJ):add picture_URL
+	# picture_URL =  models.CharField(max_length=200)
+	category = models.ForeignKey(Category, on_delete=models.CASCADE)
+	tag = models.ManyToManyField(Tag)
 
 	class Meta:
-		ordering = ('-pubDate',)  # Ordered by published data
+		ordering = ('-publish_date',)  # Ordered by published data
 
 	def __unicode__(self):
-		return self.title
+		return self.aid
 
 
 # TODO(LYJ): Change the attribute name according to google code style.
 class Linux(models.Model):
 	"""Basic class of category linux"""
 	lid = models.CharField(primary_key=True, max_length=200)
-	orderNum = models.IntegerField()
+	sequence_number = models.IntegerField()
 	article = models.ForeignKey('Article', on_delete=models.CASCADE)
 
 	class Meta:

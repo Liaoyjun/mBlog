@@ -19,7 +19,7 @@ from .models import  Linux
 
 class ArticleAdmin(admin.ModelAdmin):
 	"""Admin class of Article"""
-	list_display = ('aid', 'orderNum', 'title', 'pubDate', 'modDate')
+	list_display = ('aid', 'orderNum', 'title', 'publish_date', 'modify_date')
 
 
 class LinuxAdmin(admin.ModelAdmin):

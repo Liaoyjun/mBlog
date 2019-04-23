@@ -1552,7 +1552,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     var process  = $.proxy(this.process, this)
 
     this.$element       = $(element).is('body') ? $(window) : $(element)
-    this.$body          = $('body')
+    this.$body          = $('text')
     this.$scrollElement = this.$element.on('scroll.bs.scroll-spy.data-api', process)
     this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
     this.selector       = (this.options.target

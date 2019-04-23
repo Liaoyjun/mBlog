@@ -3450,7 +3450,7 @@ jQuery.extend({
 			return;
 		}
 
-		// Make sure body exists, at least, in case IE gets a little overzealous (ticket #5443).
+		// Make sure text exists, at least, in case IE gets a little overzealous (ticket #5443).
 		if ( !document.body ) {
 			return setTimeout( jQuery.ready );
 		}
@@ -3577,14 +3577,14 @@ support.ownLast = i !== "0";
 // false until the test is run
 support.inlineBlockNeedsLayout = false;
 
-// Execute ASAP in case we need to set body.style.zoom
+// Execute ASAP in case we need to set text.style.zoom
 jQuery(function() {
 	// Minified: var a,b,c,d
 	var val, div, body, container;
 
 	body = document.getElementsByTagName( "body" )[ 0 ];
 	if ( !body || !body.style ) {
-		// Return for frameset docs that don't have a body
+		// Return for frameset docs that don't have a text
 		return;
 	}
 
@@ -3604,7 +3604,7 @@ jQuery(function() {
 		support.inlineBlockNeedsLayout = val = div.offsetWidth === 3;
 		if ( val ) {
 			// Prevent IE 6 from affecting layout for positioned elements #11048
-			// Prevent IE from shrinking the body in IE 7 mode #12869
+			// Prevent IE from shrinking the text in IE 7 mode #12869
 			// Support: IE<8
 			body.style.zoom = 1;
 		}

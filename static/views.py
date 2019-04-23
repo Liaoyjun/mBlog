@@ -142,7 +142,7 @@ class BlogSitemap(Sitemap):
 	"""Basic class for displaying the sitemap of the blog.
 
 	Need to import Sitemap first.
-	modDate and aid are attributes from data model Article
+	modify_date and aid are attributes from data model Article
 	"""
 	changefreq = "daily"
 	priority = 0.5
