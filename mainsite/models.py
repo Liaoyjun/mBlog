@@ -47,7 +47,7 @@ class Article(models.Model):
 	title = models.CharField(max_length=200)
 	abstract = models.CharField(max_length=400)
 	text = models.TextField()
-	publish_date = models.DateTimeField(default=timezone.now)
+	publish_date = models.DateTimeField()
 	modify_date = models.DateTimeField(default=timezone.now)
 	# TODO(LYJ):add picture_URL
 	# picture_URL =  models.CharField(max_length=200)
@@ -62,14 +62,14 @@ class Article(models.Model):
 
 
 # TODO(LYJ): Change the attribute name according to google code style.
-class Linux(models.Model):
-	"""Basic class of category linux"""
-	lid = models.CharField(primary_key=True, max_length=200)
-	sequence_number = models.IntegerField()
-	article = models.ForeignKey('Article', on_delete=models.CASCADE)
-
-	class Meta:
-		ordering = ('-lid',)
-
-	def __unicode__(self):
-		return self.lid
+# class Linux(models.Model):
+# 	"""Basic class of category linux"""
+# 	lid = models.CharField(primary_key=True, max_length=200)
+# 	sequence_number = models.IntegerField()
+# 	article = models.ForeignKey('Article', on_delete=models.CASCADE)
+#
+# 	class Meta:
+# 		ordering = ('-lid',)
+#
+# 	def __unicode__(self):
+# 		return self.lid

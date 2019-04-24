@@ -14,7 +14,7 @@ register them here.
 
 from django.contrib import admin
 from .models import  Article
-from .models import  Linux
+# from .models import  Linux
 from .models import  Category
 from .models import Tag
 
@@ -24,9 +24,9 @@ class ArticleAdmin(admin.ModelAdmin):
 	list_display = ('aid', 'sequence_number', 'title', 'publish_date', 'modify_date')
 
 
-class LinuxAdmin(admin.ModelAdmin):
-	"""Admin class of Linux"""
-	list_display = ('lid', 'sequence_number', 'article_title')
+# class LinuxAdmin(admin.ModelAdmin):
+# 	"""Admin class of Linux"""
+# 	list_display = ('lid', 'sequence_number', 'article_title')
 
 	# Use the @ label define a function to show the detail of foreigner key
 	@staticmethod
@@ -48,6 +48,6 @@ class TagAdmin(admin.ModelAdmin):
 
 # register the database moudles and the corresponding  admin classes.
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Linux, LinuxAdmin)
+# admin.site.register(Linux, LinuxAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)

@@ -2,72 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ba4ff65-c117-4f2b-9fc2-e920c646c56d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/mainsite/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mainsite/templatetags/base_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/change_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/change_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admin/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admindocs/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admindocs/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admindocs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/contrib/admindocs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/core/handlers/exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/core/handlers/exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/db/backends/sqlite3/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/db/backends/sqlite3/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/db/migrations/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/db/migrations/state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/http/multipartparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/http/multipartparser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/http/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/http/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/http/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/http/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/middleware/http.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/middleware/http.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/template/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/template/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/utils/deconstruct.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/utils/deconstruct.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/utils/feedgenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/utils/feedgenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/utils/translation/trans_real.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/utils/translation/trans_real.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/views/csrf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/views/csrf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/django/views/static.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/django/views/static.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/markdown/extensions/footnotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/markdown/extensions/footnotes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connectionpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connectionpool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/fields.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/sessions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mBlog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mBlog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainsite/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0002_article_ordernum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0003_linux_ordernum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0004_auto_20180930_2306.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0005_auto_20180930_2327.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0006_linux_ordernum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0007_auto_20181001_1155.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0008_delete_post.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0009_auto_20181003_1142.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mainsite/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainsite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/404/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/404/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/404/js/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/404/js/jquery-1.10.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/change_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/about_author_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/about_author_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/article/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/article/previous_next_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article/previous_next_article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/article/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article/text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainsite/article_list/head_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article_list/head_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/article_list/head_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article_list/related_information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/article_list/list_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article_list/list_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/navigator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/sidebar/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/sidebar/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/base/sidebar/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/sidebar/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,14 +47,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            <state relative-caret-position="1317">
+              <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
               <folding>
                 <element signature="e#531#568#0" expanded="true" />
-                <element signature="e#966#1185#0" />
               </folding>
             </state>
           </provider>
@@ -107,11 +62,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="e#598#626#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="514">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -119,10 +71,35 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+            <state relative-caret-position="348">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#495#527#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base/sidebar/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+              <folding>
+                <element signature="n#li#0;n#ul#0;n#div#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_tags.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mainsite/templatetags/base_tags.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,6 +111,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -171,18 +149,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/mainsite/article_list/article_list_introduction.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_infomation/article_abstract.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_infomation/article_head_info.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_list/article_list_pagination.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_detail/article_detail_content.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_detail/article_detail_comment_area.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/single.html" />
         <option value="$PROJECT_DIR$/templates/article_detail.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_detail/article_detail_body.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_detail/article_detail_navigation.html" />
         <option value="$PROJECT_DIR$/templates/base/base_navigator.html" />
-        <option value="$PROJECT_DIR$/templates/base/base.html" />
         <option value="$PROJECT_DIR$/mainsite/static/mainsite/css/custom.css" />
         <option value="$PROJECT_DIR$/templates/show_pi_temperature.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_detail/article_detail.html" />
@@ -207,21 +177,29 @@
         <option value="$PROJECT_DIR$/backup/menu.html" />
         <option value="$PROJECT_DIR$/templates/sidebar/menu.html" />
         <option value="$PROJECT_DIR$/templates/sidebar/header.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" />
         <option value="$PROJECT_DIR$/mainsite/static/mainsite/css/main.css" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/navigator.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article_list/list_main.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/sidebar/menu.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/base/base.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article/content.html" />
-        <option value="$PROJECT_DIR$/templates/mainsite/article/article.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article_list/head_info.html" />
         <option value="$PROJECT_DIR$/templates/mainsite/article/text.html" />
-        <option value="$PROJECT_DIR$/mainsite/views.py" />
-        <option value="$PROJECT_DIR$/mainsite/admin.py" />
+        <option value="$PROJECT_DIR$/templates/mainsite/article_list/list_main.html" />
         <option value="$PROJECT_DIR$/mainsite/models.py" />
+        <option value="$PROJECT_DIR$/mainsite/admin.py" />
+        <option value="$PROJECT_DIR$/templates/mainsite/article/previous_next_article.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/article_list/related_information.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/index.html" />
+        <option value="$PROJECT_DIR$/templates/base/base.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/article_list/article_list.html" />
+        <option value="$PROJECT_DIR$/templates/mainsite/article/article.html" />
+        <option value="$PROJECT_DIR$/mainsite/views.py" />
+        <option value="$PROJECT_DIR$/templatetags/__init__.py" />
+        <option value="$PROJECT_DIR$/templatetags/base_tags.py" />
+        <option value="$PROJECT_DIR$/mainsite/templatetags/base_tags.py" />
+        <option value="$PROJECT_DIR$/templates/base/sidebar/menu.html" />
       </list>
     </option>
   </component>
@@ -231,8 +209,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-221" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-222" />
     <option name="y" value="135" />
     <option name="width" value="1946" />
     <option name="height" value="1106" />
@@ -313,24 +291,13 @@
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="backup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
               <item name="mainsite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
               <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
@@ -341,35 +308,14 @@
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="article_list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="mBlog" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
-              <item name="extended_component" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -397,19 +343,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\mBlog" />
+      <recent name="D:\pythonProject\mBlog\templates" />
+      <recent name="D:\pythonProject\mBlog\backup" />
+      <recent name="D:\pythonProject\mBlog\mainsite\static\mainsite\img" />
+      <recent name="D:\pythonProject\mBlog\templates\mainsite\base" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\mBlog\mainsite" />
       <recent name="D:\pythonProject\mBlog\templates\mainsite\base\sidebar" />
       <recent name="D:\pythonProject\mBlog\mainsite\static\mainsite\img" />
       <recent name="D:\pythonProject\mBlog\backup" />
       <recent name="D:\pythonProject\mBlog\static\mainsite\images" />
-      <recent name="D:\pythonProject\mBlog\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\pythonProject\mBlog" />
-      <recent name="D:\pythonProject\mBlog\backup" />
-      <recent name="D:\pythonProject\mBlog\mainsite\static\mainsite\img" />
-      <recent name="D:\pythonProject\mBlog\templates\mainsite\base" />
-      <recent name="D:\pythonProject\mBlog\templates\sidebar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -506,48 +452,48 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.60367894" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.502021" side_tool="true" weight="0.3277592" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959645" visible="true" weight="0.2909699" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987874" weight="0.3277592" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.497979" weight="0.5451505" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.548495" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.4347826" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60714287" visible="true" weight="0.21503638" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60714287" weight="0.24656427" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2993311" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.39285713" side_tool="true" weight="0.22069523" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32943144" />
-      <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32943144" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60714287" visible="true" weight="0.22312045" />
       <window_info id="Structure" order="1" sideWeight="0.39285713" side_tool="true" weight="0.39773646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.60367894" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987874" weight="0.3277592" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959645" weight="0.3110368" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.67558527" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.497979" weight="0.5451505" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.6688963" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.502021" side_tool="true" weight="0.3277592" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4987874" weight="0.3277592" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" sideWeight="0.5620301" side_tool="true" weight="0.20210186" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.67558527" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.497979" weight="0.5451505" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,32 +514,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/about_author_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/mainsite/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="4" column="118283" selection-start-line="4" selection-start-column="118283" selection-end-line="4" selection-end-column="118283" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/404/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="5629" column="1" selection-start-line="5629" selection-start-column="1" selection-end-line="5629" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/static/mainsite/css/highlights/fruity.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1337" />
-      </provider>
-    </entry>
     <entry file="file://D:/Anaconda3/pkgs/django-2.1.1-py36_0/Lib/site-packages/django/views/templates/default_urlconf.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -627,13 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1666">
           <caret line="6459" column="1" selection-start-line="6459" selection-start-column="1" selection-end-line="6459" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -736,7 +649,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/abstract.html" />
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/footer.html">
+    <entry file="file://$PROJECT_DIR$/templates/base/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
@@ -750,38 +663,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/control.html" />
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/navigator.html">
+    <entry file="file://$PROJECT_DIR$/templates/base/navigator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-319">
           <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/footer.html">
+    <entry file="file://$PROJECT_DIR$/templates/base/sidebar/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/header.html">
+    <entry file="file://$PROJECT_DIR$/templates/base/sidebar/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="9" column="110" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/base/sidebar/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -792,37 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/article_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/pagination.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/article/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/article/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/article/previous_next_article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -833,47 +705,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/head_info.html">
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/pagination.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/article/previous_next_article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="87">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/related_information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/list_main.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="37" />
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/article_list/article_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainsite/article/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainsite/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templatetags/base_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="514">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainsite/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1317">
+          <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
           <folding>
-            <element signature="e#598#626#0" expanded="true" />
+            <element signature="e#531#568#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="348">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#495#527#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/views.py">
+    <entry file="file://$PROJECT_DIR$/mainsite/templatetags/base_tags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        <state relative-caret-position="87">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#531#568#0" expanded="true" />
-            <element signature="e#966#1185#0" />
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/sidebar/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>

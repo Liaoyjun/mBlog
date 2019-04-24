@@ -17,7 +17,7 @@
 
 from django.shortcuts import redirect
 from .models import Article
-from .models import Linux
+# from .models import Linux
 from django.template.loader import get_template
 from django.http import HttpResponse
 # from datetime import datetime
@@ -26,6 +26,7 @@ import os # Used to get the cpu temperature of pi
 import markdown
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
+import operator
 
 
 
@@ -40,11 +41,11 @@ def index_page(request):
 	return HttpResponse(get_template('mainsite/index.html').render())
 
 
-def show_article(request, class_name, aid):
+def show_article(request, category_name, aid):
 	"""Return the article requested
 
 	:param request:
-	:param class_name:
+	:param category_name:
 	:param aid:
 	:return:
 	"""
@@ -61,17 +62,13 @@ def show_article(request, class_name, aid):
 		template = get_template('mainsite/article/article.html')
 		idList = list()
 
-		# get a list "articles" which contains the articles requested.
-		if class_name == 'all':
+		if operator.eq(category_name, 'all'):
 			articles = Article.objects.all().order_by('sequence_number')
-			n = articles.count() # the length of the "articles".
 		else:
-			if class_name == 'linux':
-				classes = Linux.objects.all().order_by('sequence_number')
+			articles = Article.objects.all().filter(category=category_name).order_by('sequence_number')
 
-			for every in classes:
-				articles.append(Article.objects.get(aid=every.article.aid))
-			n = len(articles)
+		# articles = Article.objects.all().order_by('sequence_number')
+		n = articles.count() # the length of the "articles".
 
 		# Get the id list from the "articles" list.
 		# id list store all the id of the articles that match the class chosen.
@@ -92,11 +89,10 @@ def show_article(request, class_name, aid):
 		# 'markdown.extensions.toc',
 		TocExtension(slugify=slugify),
         ])
-		article.body = md.convert(article.text)
+		article.text = md.convert(article.text)
 		article.toc = md.toc
-
-
-
+		# TODO(LYJ):
+		# article.text_num = len(article.text)
 
 		# Get the current index of the article according the aid
 		index = idList.index(article.aid)
@@ -116,25 +112,21 @@ def show_article(request, class_name, aid):
 		return redirect('/404')
 
 
-def show_articles_list(request, className):
+def show_articles_list(request, category_name):
 	"""return the articles list requested.
 
 	:param request:
-	:param className:
+	:param category_name:
 	:return:
 	"""
 	template = get_template('mainsite/article_list/article_list.html')
 	articles = list()
 	classes = list()
 
-	if className == 'all':
+	if operator.eq(category_name, 'all'):
 		articles = Article.objects.all().order_by('sequence_number')
 	else:
-		if className == 'linux':
-			classes = Linux.objects.all().order_by('sequence_number')
-
-		for every in classes:
-			articles.append(Article.objects.get(aid=every.article.aid))
+		articles = Article.objects.all().filter(category=category_name).order_by('sequence_number')
 
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -171,7 +163,7 @@ class BlogSitemap(Sitemap):
 		return Article.objects.all()
 
 	def lastmod(self, obj):
-		return obj.modDate
+		return obj.modify_date
 
 	def location(self, obj):
 		return obj.aid
