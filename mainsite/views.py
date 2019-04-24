@@ -91,8 +91,8 @@ def show_article(request, category_name, aid):
         ])
 		article.text = md.convert(article.text)
 		article.toc = md.toc
-		# TODO(LYJ):
-		# article.text_num = len(article.text)
+		# increase the time of view
+		article.increase_views()
 
 		# Get the current index of the article according the aid
 		index = idList.index(article.aid)

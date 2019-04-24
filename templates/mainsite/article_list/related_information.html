@@ -1,3 +1,4 @@
+{% load base_tags %}
 <header class="entry-header">
     <!-- articles main title -->
     <h1 class="entry-title">
@@ -8,7 +9,7 @@
     <!-- articles subtitle -->
     <div class="entry-meta">
         <!-- TODO(LYJ):add a href -->
-        <span class="post-category"><a href="#">Category</a></span>
+        <span class="post-category"><a href="/article/{{ article.category.name }}/">{{ article.category.name }}</a></span>
         <span class="post-date">
             <a href="#">
                 <time class="entry-date" datetime="2012-11-09T23:15:57+00:00">
@@ -17,9 +18,10 @@
             </a>
         </span>
         <span class="post-author">by <a href="/about">LYJ</a></span>
-        <!-- TODO(LYJ):add a href -->
-        <span class="comments-link"><a href="#">0 评论</a></span>
-        <span class="views-count"><a href="#">0 阅读</a></span>
-        <span class="views-count"><a href="#">0 字数</a></span>
+        <!-- TODO(LYJ):add -->
+{#        <span class="comments-link"><a href="#">0 评论</a></span>#}
+        <span class="views-count"><a href="#">{{ article.views }} 阅读</a></span>
+        {% get_words_number_of_article article.text as words_number %}
+        <span class="views-count"><a href="#">{{ words_number }} 字数</a></span>
     </div>
 </header>

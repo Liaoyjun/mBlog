@@ -53,6 +53,11 @@ class Article(models.Model):
 	# picture_URL =  models.CharField(max_length=200)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	tag = models.ManyToManyField(Tag)
+	views = models.IntegerField(default=0)
+
+	def increase_views(self):
+		self.views += 1
+		self.save(update_fields=['views'])
 
 	class Meta:
 		ordering = ('-publish_date',)  # Ordered by published data

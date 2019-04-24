@@ -30,11 +30,11 @@
                 <span class="menu-text">Articles</span>
             </a>
             <div class="sidebar-submenu">
-            {%  get_all_category_name as categories %}
                 <ul>
+                    {%  get_all_category_name as categories %}
                     <li><a href="/article/all/">ALL</a></li>
                     {% for category in categories %}
-                        <li><a href="/article/{{ category.cid }}/">{{ category.cid }}</a></li>
+                        <li><a href="/article/{{ category.name }}/">{{ category.cid }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
