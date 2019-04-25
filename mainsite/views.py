@@ -41,6 +41,17 @@ def index_page(request):
 	return HttpResponse(get_template('mainsite/index.html').render())
 
 
+def error_404(request):
+	"""Return the index page
+
+	:param request:
+	:return:
+	"""
+	# get_template method will search the html template file under
+	# the path BASE_DIR/templates
+	return HttpResponse(get_template('mainsite/error_404.html').render())
+
+
 def show_article(request, category_name, aid):
 	"""Return the article requested
 
@@ -112,7 +123,7 @@ def show_article(request, category_name, aid):
 		return redirect('/404')
 
 
-def show_articles_list(request, category_name):
+def show_articles_list_according_to_category(request, category_name):
 	"""return the articles list requested.
 
 	:param request:
@@ -130,6 +141,27 @@ def show_articles_list(request, category_name):
 
 	html = template.render(locals())
 	return HttpResponse(html)
+
+
+def show_articles_list_according_to_tag(request, tag_name):
+	"""return the articles list requested.
+
+	:param request:
+	:param tag_name:
+	:return:
+	"""
+	template = get_template('mainsite/article_list/article_list.html')
+	articles = list()
+	classes = list()
+
+
+
+	articles = Article.objects.all().filter(tag=tag_name).order_by('sequence_number')
+
+	html = template.render(locals())
+	return HttpResponse(html)
+
+
 
 # return the aboutpage
 def show_about_page(request):

@@ -21,7 +21,7 @@ from .models import Tag
 
 class ArticleAdmin(admin.ModelAdmin):
 	"""Admin class of Article"""
-	list_display = ('aid', 'sequence_number', 'title', 'publish_date', 'modify_date')
+	list_display = ('aid', 'sequence_number', 'title', 'category' ,'publish_date', 'modify_date')
 
 
 # class LinuxAdmin(admin.ModelAdmin):
@@ -38,12 +38,12 @@ class ArticleAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
 	"""Admin class of Category"""
-	list_display = ('cid',)
+	list_display = ('cid', 'name')
 
 
 class TagAdmin(admin.ModelAdmin):
 	"""Admin class of Category"""
-	list_display = ('tid',)
+	list_display = ('tid', 'name')
 
 
 # register the database moudles and the corresponding  admin classes.

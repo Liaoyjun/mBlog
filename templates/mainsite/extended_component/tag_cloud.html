@@ -1,11 +1,15 @@
+{% load base_tags %}
 <div class="widget widget-tag-cloud">
     <h3 class="widget-title">标签云</h3>
     <ul>
-        <li>
-            <a href="#">Django</a>
-        </li>
-        <li>
-            <a href="#">Python</a>
-        </li>
+        {%  get_number_of_articles_of_category as categories_list %}
+        {% for category in categories_list %}
+            <li>
+                <a href="/article/{{ category.name }}/">
+{#                    TODO(LYJ):count the number#}
+                    {{ category.name }}<span class="post-count"> ({{ category.number_of_articles }})</span>
+                </a>
+            </li>
+        {% endfor %}
     </ul>
 </div>
