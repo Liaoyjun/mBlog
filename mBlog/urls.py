@@ -33,6 +33,7 @@ from django.urls import path, re_path
 from mainsite.views import index_page
 from mainsite.views import show_article
 from mainsite.views import show_articles_list_according_to_category
+from mainsite.views import show_articles_list_according_to_tag
 from mainsite.views import show_about_page
 from mainsite.views import error_404
 from mainsite.views import show_contact_page
@@ -46,9 +47,9 @@ urlpatterns = [
     path('', index_page),
     path('about/', show_about_page),
     path('contact/', show_contact_page),
+    re_path(r'^article/tag/(\w+)/$', show_articles_list_according_to_tag),
     re_path(r'^article/(\w+)/(\w+)/$', show_article),
     # re_path(r'^post/(?P<classification>\w+)/(?P<aid>\w+)/$', showArticlesList3)
-    re_path(r'^article/category/(\w+)/$', show_articles_list_according_to_category),
     re_path(r'^article/(\w+)/$', show_articles_list_according_to_category),
     # for the sitemap function
     re_path(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': BlogSitemap}}, name='django.contrib.sitemaps.views.sitemap'),

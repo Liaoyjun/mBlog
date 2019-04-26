@@ -2,12 +2,12 @@
 <div class="widget widget-tag-cloud">
     <h3 class="widget-title">标签云</h3>
     <ul>
-        {%  get_number_of_articles_of_category as categories_list %}
-        {% for category in categories_list %}
+        {%  get_all_tag_name as tag_list %}
+        {% for tag in tag_list %}
             <li>
-                <a href="/article/{{ category.name }}/">
+                <a href="/article/tag/{{ tag.name }}/">
 {#                    TODO(LYJ):count the number#}
-                    {{ category.name }}<span class="post-count"> ({{ category.number_of_articles }})</span>
+                    {{ tag.name }}
                 </a>
             </li>
         {% endfor %}

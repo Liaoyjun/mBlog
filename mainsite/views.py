@@ -29,7 +29,6 @@ from markdown.extensions.toc import TocExtension
 import operator
 
 
-
 def index_page(request):
 	"""Return the index page
 
@@ -133,12 +132,11 @@ def show_articles_list_according_to_category(request, category_name):
 	template = get_template('mainsite/article_list/article_list.html')
 	articles = list()
 	classes = list()
-
+	print("test")
 	if operator.eq(category_name, 'all'):
 		articles = Article.objects.all().order_by('sequence_number')
 	else:
 		articles = Article.objects.all().filter(category=category_name).order_by('sequence_number')
-
 	html = template.render(locals())
 	return HttpResponse(html)
 
@@ -154,10 +152,7 @@ def show_articles_list_according_to_tag(request, tag_name):
 	articles = list()
 	classes = list()
 
-
-
 	articles = Article.objects.all().filter(tag=tag_name).order_by('sequence_number')
-
 	html = template.render(locals())
 	return HttpResponse(html)
 
