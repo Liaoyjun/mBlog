@@ -6,18 +6,38 @@
 * Attention:
 ================================================================================
 * Modifier:LYJ
+* Modification time: 2019-04
+* Modify content:
++ from .models import Article
++ import redirect for calling redirect()
++ import get_template for calling get_template()
++ import HttpResponse for calling HttpResponse()
++ import operator for calling operator.eq().
++ import os for calling os.popen().
++ import markdown, from django.utils.text import slugify, from markdown.extensions.toc import TocExtension
+for using MarkDown in def show_article.
++ def index_page, error_404, show_article, show_articles_list_according_to_category,
+show_articles_list_according_to_tag, show_about_page, show_contact_page, show_cpu_temperature.
++ Class BlogSitemap
+* Additional explanation:
+(*) get_template(): will search html template according to directory under
+path of BASE_DIR/templates.
+(*) template.render():  transfer variables to the html template.
+================================================================================
+* Modifier:LYJ
 * Modification time: 2019-04-13
 * Modify content: Modify the code according to the google code style.
 ================================================================================
 * Modifier:LYJ
-* Modification time: 2019-04-17
-* Modify content: Improve the front end.
+* Modification time: 2019-04-27
+* Modify content:
++
+================================================================================
 """
 
 
-from django.shortcuts import redirect
 from .models import Article
-# from .models import Linux
+from django.shortcuts import redirect
 from django.template.loader import get_template
 from django.http import HttpResponse
 # from datetime import datetime
@@ -30,92 +50,86 @@ import operator
 
 
 def index_page(request):
-	"""Return the index page
+	"""Return index page
 
-	:param request:
+	:param request: /
 	:return:
 	"""
-	# get_template method will search the html template file under
-	# the path BASE_DIR/templates
+
+
 	return HttpResponse(get_template('mainsite/index.html').render())
 
 
 def error_404(request):
-	"""Return the index page
+	"""Return 404 page
 
-	:param request:
+	:param request: /404/
 	:return:
 	"""
-	# get_template method will search the html template file under
-	# the path BASE_DIR/templates
+
 	return HttpResponse(get_template('mainsite/error_404.html').render())
 
 
-def show_article(request, category_name, aid):
-	"""Return the article requested
+def show_article(request, category, aid):
+	"""Return the article requested according to category name and aid。
 
-	:param request:
-	:param category_name:
-	:param aid:
+	:param request: /article/(\w+)/(\w+)/
+	:param category: Category that the article belongs to.
+	Used to define the urls of next or previous button.
+	:param aid: Id of the article.
 	:return:
 	"""
 
 	# If an error is triggered here, redirect to 404 page.
 	try:
+		# initialize variable
 		articles = list()
 		classes = list()
+		idList = list()
 		preId = -1
 		nextId = -1
 		n = 0
 
-		# template = get_template('article.html')
-		template = get_template('mainsite/article/article.html')
-		idList = list()
+		template = get_template('mainsite/article/article.html') # Get html template
 
-		if operator.eq(category_name, 'all'):
+		# Get articles list according to category
+		if operator.eq(category, 'all'):
 			articles = Article.objects.all().order_by('sequence_number')
 		else:
-			articles = Article.objects.all().filter(category=category_name).order_by('sequence_number')
+			articles = Article.objects.all().filter(category=category).order_by('sequence_number')
 
-		# articles = Article.objects.all().order_by('sequence_number')
-		n = articles.count() # the length of the "articles".
+		n = articles.count() # the amount of articles.
 
-		# Get the id list from the "articles" list.
-		# id list store all the id of the articles that match the class chosen.
+		# Generate id list from the articles list.
+		# Id list stores all of the id of articles in articles list.
 		for article in articles:
 			idList.append(article.aid)
 
-		# Get the article requested.
-		article = Article.objects.get(aid=aid)
-		# Use Markdown to render the article, including hightlighting the code,
-		# generating the content of article.
+		article = Article.objects.get(aid=aid) # Get article requested.
+
+		# Use Markdown to render article, including code hightlight and
+		# generating content of article.
 		md = markdown.Markdown(extensions=[
-		# inclede extention of abbreviation, table, etc.
-		'markdown.extensions.extra',
-		# TODO(LYJ):code hightlight
-		# inclede extention of highlighting code.
-		'markdown.extensions.codehilite',
-			# inclede extention of generating the content of article.
-		# 'markdown.extensions.toc',
-		TocExtension(slugify=slugify),
+		'markdown.extensions.extra', # extention for abbreviation, table, and etc.
+		# TODO(LYJ)
+		# 'markdown.extensions.codehilite', # extention for code highlight.
+		# 'markdown.extensions.toc', # inclede extention of generating the content of article.
+		TocExtension(slugify=slugify), # Make the anchor of content more beautiful.
         ])
 		article.text = md.convert(article.text)
 		article.toc = md.toc
-		# increase the time of view
-		article.increase_views()
 
-		# Get the current index of the article according the aid
-		index = idList.index(article.aid)
+		article.increase_views() # increase views time.
 
-		# Get the preId and nextId.
+		index = idList.index(article.aid) # get index of the current article.
+
+		# Find preId and nextId of the current article.
 		if index != 0:
 			preId = idList[index-1]
 		if index != n-1:
 			nextId = idList[index+1]
 
-		# Return the request.
 		if article is not None:
-				# Use render method to transfer variables to the html template.
 			html = template.render(locals())
 			return HttpResponse(html)
 	except:
@@ -157,8 +171,6 @@ def show_articles_list_according_to_tag(request, tag_name):
 	return HttpResponse(html)
 
 
-
-# return the aboutpage
 def show_about_page(request):
 	"""Return the about page.
 
@@ -168,7 +180,7 @@ def show_about_page(request):
 	return HttpResponse(get_template('mainsite/about_author_page.html').render())
 
 
-# return the aboutpage
+# TODO(LYJ): Improve comment.
 def show_contact_page(request):
 	"""Return the about page.
 
@@ -176,6 +188,7 @@ def show_contact_page(request):
 	:return:
 	"""
 	return HttpResponse(get_template('mainsite/contact.html').render())
+
 
 class BlogSitemap(Sitemap):
 	"""Basic class for displaying the sitemap of the blog.
@@ -203,6 +216,7 @@ def show_cpu_temperature(request):
 	:param request:
 	:return:
 	"""
+
 	template = get_template('show_pi_temperature.html')
 	res = os.popen('vcgencmd measure_temp').readline()
 	CPU_temp = res.replace("temp=", "").replace("'C\n", "")

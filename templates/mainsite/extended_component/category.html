@@ -3,6 +3,7 @@
     <h3 class="widget-title">分类</h3>
     <ul>
         {%  get_number_of_articles_of_category as categories_list %}
+
         {% for category in categories_list %}
             <li>
                 <a href="/article/{{ category.name }}/">

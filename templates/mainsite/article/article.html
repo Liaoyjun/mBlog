@@ -1,9 +1,11 @@
 {% extends 'base/base.html' %}
 {% block httpHead %}Welcome here{% endblock %}
+
 {%  block content %}
     <div class="content-body">
         <div class="container">
             <div class="row">
+
                 <!-- article-->
                 <main class="col-md-9">
                     {% include 'mainsite/article/text.html' %}
@@ -13,6 +15,7 @@
                     <!-- article detail comment area -->
 {#                    {% include 'mainsite/extended_component/comment.html' %}#}
                 </main>
+
                 <!-- side bar to show content of article. -->
                 <aside class="col-md-3">
                     {% include 'mainsite/article/content.html' %}

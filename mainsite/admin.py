@@ -6,15 +6,28 @@
 register them here.
 ================================================================================
 * Modifier:LYJ
+* Modification time: 2019-04
+* Modify content:
++ import admin
++ from .models import Article
++ Define and register basic admin models. Define list_display.
+================================================================================
+* Modifier:LYJ
 * Modification time: 2019-04-13
-* Modify content: Modify the code according to the google code style.
+* Modify content: Modify code according to google code style.
+================================================================================
+* Modifier:LYJ
+* Modification time: 2019-04-27
+* Modify content:
++ Category Tag
++ class CategoryAdmin, TagAdmin
 ================================================================================
 """
 
 
 from django.contrib import admin
+
 from .models import  Article
-# from .models import  Linux
 from .models import  Category
 from .models import Tag
 
@@ -29,11 +42,11 @@ class ArticleAdmin(admin.ModelAdmin):
 # 	list_display = ('lid', 'sequence_number', 'article_title')
 
 	# Use the @ label define a function to show the detail of foreigner key
-	@staticmethod
-	def article_title(obj):
-		return obj.article.title
-
-	article_title.admin_order_field = 'article_title'
+	# @staticmethod
+	# def article_title(obj):
+	# 	return obj.article.title
+	#
+	# article_title.admin_order_field = 'article_title'
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -48,6 +61,5 @@ class TagAdmin(admin.ModelAdmin):
 
 # register the database moudles and the corresponding  admin classes.
 admin.site.register(Article, ArticleAdmin)
-# admin.site.register(Linux, LinuxAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)

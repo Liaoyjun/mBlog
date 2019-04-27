@@ -2,13 +2,27 @@
 ================================================================================
 * File name:
 * Author:LYJ
-* Description: Define database models, return value and default rank oder here.
+* Description: Define database models, return value and default sequence number.
 * Attention: When using foreigner key, have to manually add a sentence
 "on_delete=models.CASCADE" on the migrations files.
 ================================================================================
 * Modifier:LYJ
+* Modification time: 2019-04
+* Modify content:
++ import models, timezone
++ Define basic models. Define attributes, ranking index, def __unicode__(self).
+================================================================================
+* Modifier:LYJ
 * Modification time: 2019-04-13
-* Modify content: Modify the code according to the google code style.
+* Modify content: Modify code according to google code style.
+================================================================================
+* Modifier:LYJ
+* Modification time: 2019-04-27
+* Modify content:
++ class Category, Tag
++ foreign key category, tag in class Ariticle
++ attribute views in class Ariticle.
++ def increase_views in class Ariticle
 ================================================================================
 """
 
@@ -39,7 +53,6 @@ class Tag(models.Model):
 		return self.tid
 
 
-# TODO(LYJ): Change the attribute name according to google code style.
 class Article(models.Model):
 	"""Basic class of post article"""
 	aid = models.CharField(primary_key=True, max_length=200) # aid is used as the slug.
@@ -66,7 +79,6 @@ class Article(models.Model):
 		return self.aid
 
 
-# TODO(LYJ): Change the attribute name according to google code style.
 # class Linux(models.Model):
 # 	"""Basic class of category linux"""
 # 	lid = models.CharField(primary_key=True, max_length=200)
