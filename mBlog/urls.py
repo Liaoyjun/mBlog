@@ -27,19 +27,22 @@ are the values of "(\w+)".
 ================================================================================
 """
 
-
+# TODO(LYJ)add comment and regular expression usage.
 from django.contrib import admin
 from django.urls import path, re_path
 from mainsite.views import index_page
 from mainsite.views import show_article
-from mainsite.views import show_articles_list_according_to_category
-from mainsite.views import show_articles_list_according_to_tag
+# from mainsite.views import show_articles_list_according_to_category
+# from mainsite.views import show_articles_list_according_to_tag
 from mainsite.views import show_about_page
 from mainsite.views import error_404
 from mainsite.views import show_contact_page
 from mainsite.views import show_cpu_temperature
 from django.contrib.sitemaps.views import sitemap
 from mainsite.views import BlogSitemap
+from mainsite.views import ArticleList
+from mainsite.views import ArticleListAccordingToCategory
+from mainsite.views import ArticleListAccordingToTag
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -47,10 +50,16 @@ urlpatterns = [
     path('', index_page),
     path('about/', show_about_page),
     path('contact/', show_contact_page),
-    re_path(r'^article/tag/(\w+)/$', show_articles_list_according_to_tag),
+
+    path('article/all/', ArticleList.as_view()),
+    re_path(r'^article/tag/(?P<tag>\w+)/$', ArticleListAccordingToTag.as_view()),
+    re_path(r'^article/(?P<category>\w+)/$', ArticleListAccordingToCategory.as_view()),
     re_path(r'^article/(\w+)/(\w+)/$', show_article),
     # re_path(r'^post/(?P<classification>\w+)/(?P<aid>\w+)/$', showArticlesList3)
-    re_path(r'^article/(\w+)/$', show_articles_list_according_to_category),
+    # re_path(r'^article/tag/(\w+)/$', show_articles_list_according_to_tag),
+    # re_path(r'^article/(\w+)/$', show_articles_list_according_to_category),
+    # re_path(r'^article/(\w+)/$', ArticleListAccordingToCategory.as_view()),
+
     # for the sitemap function
     re_path(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': BlogSitemap}}, name='django.contrib.sitemaps.views.sitemap'),
     #show CPU Temperature
