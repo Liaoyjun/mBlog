@@ -25,6 +25,18 @@ are the values of "(\w+)".
 * Modification time: 2019-04-13
 * Modify content: Modify the code according to the google code style.
 ================================================================================
+* Modifier:LYJ
+* Modification time: 2019-04-29
+* Modify content:
++ from mainsite.views import ArticleList ArticleListAccordingToCategory ArticleListAccordingToTag
++ re_path(r'^article/tag/(?P<tag>\w+)/$', ArticleListAccordingToTag.as_view()),
++ re_path(r'^article/(?P<category>\w+)/$', ArticleListAccordingToCategory.as_view()),
++ re_path(r'^article/(\w+)/(\w+)/$', show_article),
+* Additional explanation:
+(*) article/(?P<category>\w+)/$: The values of named parameters of the URL are stored in
+the kwargs attribute of the instance (a dictionary), and the values of non-named parameters
+values are stored in the args attribute of the instance (a list).
+(*) as_view(): Transform the class view to function view.
 """
 
 # TODO(LYJ)add comment and regular expression usage.

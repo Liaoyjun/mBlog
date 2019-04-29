@@ -16,8 +16,7 @@
 + import os for calling os.popen().
 + import markdown, from django.utils.text import slugify, from markdown.extensions.toc import TocExtension
 for using MarkDown in def show_article.
-+ def index_page, error_404, show_article, show_articles_list_according_to_category,
-show_articles_list_according_to_tag, show_about_page, show_contact_page, show_cpu_temperature.
++ def index_page, error_404, show_article, show_about_page, show_contact_page, show_cpu_temperature.
 + Class BlogSitemap
 * Additional explanation:
 (*) get_template(): will search html template according to directory under
@@ -29,9 +28,18 @@ path of BASE_DIR/templates.
 * Modify content: Modify the code according to the google code style.
 ================================================================================
 * Modifier:LYJ
-* Modification time: 2019-04-27
+* Modification time: 2019-04-29
 * Modify content:
-+
++ from django.views.generic import ListView for defining Class ArticleList
++ Define class ArticleList inherited from ListView, define model template_name
+context_object_name paginate_by.
++ OverRide the function get_queryset() in Class ArticleList
++ Define Class ArticleListAccordingToCategory ArticleListAccordingToTag
+inherited from ArticleList.
++ overRide the function get_queryset() in Class ArticleListAccordingToCategory ArticleListAccordingToTag
+* Additional explanation:
+(*) paginate_by: define the number of articles in one page.
+(*) self.kwargs.get(): get URL named variable value from the attribute of kwargs according to the name.
 ================================================================================
 """
 
@@ -115,7 +123,7 @@ def show_article(request, category, aid):
 		# TODO(LYJ)
 		# 'markdown.extensions.codehilite', # extention for code highlight.
 		# 'markdown.extensions.toc', # inclede extention of generating the content of article.
-		TocExtension(slugify=slugify), # Make the anchor of content more beautiful.
+		TocExtension(slugify=slugify), # Make the anchor URL more beautiful.
         ])
 		article.text = md.convert(article.text)
 		article.toc = md.toc
@@ -141,11 +149,12 @@ class ArticleList(ListView):
 	model = Article
 	template_name = 'mainsite/article_list/article_list.html'
 	context_object_name = 'articles'
-	paginate_by = 3
+	paginate_by = 5
 
 	def get_queryset(self):
 		return super(ArticleList, self).get_queryset().order_by('sequence_number')
 
+	# TODO(LYJ):Read the code and modify it.
 	def get_context_data(self, **kwargs):
 		"""
 		在视图函数中将模板变量传递给模板是通过给 render 函数的 context 参数传递一个字典实现的，
@@ -155,8 +164,8 @@ class ArticleList(ListView):
 		所以我们复写该方法，以便我们能够自己再插入一些我们自定义的模板变量进去。
 		"""
 
-		# 首先获得父类生成的传递给模板的字典。
-		context = super().get_context_data(**kwargs)
+
+		context = super().get_context_data(**kwargs) # 首先获得父类生成的传递给模板的字典。
 
 		# 父类生成的字典中已有 paginator、page_obj、is_paginated 这三个模板变量，
 		# paginator 是 Paginator 的一个实例，
@@ -179,6 +188,7 @@ class ArticleList(ListView):
 		# 注意此时 context 字典中已有了显示分页导航条所需的数据。
 		return context
 
+	# TODO(LYJ):Read the code and modify it.
 	@staticmethod
 	def pagination_data(paginator, page, is_paginated):
 		if not is_paginated:
