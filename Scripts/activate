@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\python项目\mBlog"
+VIRTUAL_ENV="D:\Files\Projects\PyCharm\mBlog\Scripts"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,8 +54,8 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    if [ "x(mBlog) " != x ] ; then
-	PS1="(mBlog) ${PS1:-}"
+    if [ "x(Scripts) " != x ] ; then
+	PS1="(Scripts) ${PS1:-}"
     else
     if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
         # special case for Aspen magic directories
